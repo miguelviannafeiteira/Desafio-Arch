@@ -8,7 +8,8 @@
     geral, onde aparecem todas as transações que ocorreram, e individual, filtrando somente as que pertecem
     ao id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário e com esses 
     dados realizo um filtro para saber se é crédito ou débito e assim calcular o saldo do cliente, enviando
-    para a API o id do usuário e o saldo da conta em formato JSON.
+    para a API o id do usuário e o saldo da conta em formato JSON, e, caso já exista na API o saldo do cliente,
+    ele é atualizado.
   </p>
   <p> As duas API's foram armazenadas no banco de dados mongodb, porque tive dificuldade em aplicar o redis para armazenar
    em cache, fazendo com que a aplicação não seja tão performática.
