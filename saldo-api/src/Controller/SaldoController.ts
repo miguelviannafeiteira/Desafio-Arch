@@ -43,17 +43,16 @@ class SaldoController {
     const { data }:Data = await api.get(`/transacoes/${id}`)
 
     const transacoes:UsuarioTransacao[] = data.UsuarioTransacoes
-    console.log(data)
 
-    const itemsCredito = transacoes.filter((item) => {
+    const itensCredito = transacoes.filter((item) => {
       return item.credito
     })
-    const itemsDebito = transacoes.filter((item) => {
+    const itensDebito = transacoes.filter((item) => {
       return item.debito
     })
 
-    const creditoSoma = itemsCredito.map(item => item.valor).reduce((prev, curr) => prev + curr, 0)
-    const debitoSoma = itemsDebito.map(item => item.valor).reduce((prev, curr) => prev + curr, 0)
+    const creditoSoma = itensCredito.map(item => item.valor).reduce((prev, curr) => prev + curr, 0)
+    const debitoSoma = itensDebito.map(item => item.valor).reduce((prev, curr) => prev + curr, 0)
     const saldoFinal = creditoSoma - debitoSoma
 
     // console.log(saldoFinal)
