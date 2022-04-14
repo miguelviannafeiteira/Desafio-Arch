@@ -3,7 +3,7 @@
   <p>Para realizar o desafio, criei duas API's, uma que armazena as transações e outra que armazena o saldo
     de cada usuário.
   </p>
-  <p>Na primeira API é armazenado um JSON no qual tem o id da transação, o id usuário, o valor da transação,
+  <p>Na primeira API é armazenado um JSON no qual tem o id da transação, o id do usuário, o valor da transação,
     se é débito ou crédito e a data em que foi realizada; utilizei dois endpoints:
     geral, onde aparecem todas as transações que ocorreram, e individual, filtrando somente as que pertecem
     ao id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário e com esses 
