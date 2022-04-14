@@ -1,5 +1,5 @@
  <div>
-  <h1 align="center">Sobre o Projeto</h1>
+  <h1 align="center">Sobre o Desafio</h1>
   <p>Para realizar o desafio, criei duas API's, uma que armazena as transações e outra que armazena o saldo
     de cada usuário.
   </p>
@@ -8,10 +8,10 @@
     geral, onde aparecem todas as transações que ocorreram, e individualmente, filtrando somente as que pertecem
     a id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário; com essas 
     informações faço um filtro para saber se é crédito ou débito e assim fazer o cálculo do saldo do cliente, e 
-    envio para a API o id do usuário e o saldo da conta em formato JSON.
+    envio para a API, o id do usuário e o saldo da conta em formato JSON.
   </p>
-  <p> As duas API's foram armazenadas no mongodb, porque tive dificuldade em aplicar o redis para armazenar em cache,
-    fazendo com que a aplicação não seja tão performática.
+  <p> As duas API's foram armazenadas no banco de dados mongodb, porque tive dificuldade em aplicar o redis para armazenar
+   em cache, fazendo com que a aplicação não seja tão performática.
   </p>
     
     
@@ -27,13 +27,13 @@
 <div>
   <h1 align="center">Tecnologias utilizadas</h1>
   <ul>
+    <li>Typescript</li>
     <li>Node.js</li>
     <ul>
-      <li>express</li>
+      <li>Express</li>
       <li>Mongodb</li>
       <li>Dotenv</li>
       <li>Axios</li>
     </ul>
-    <li>Typescript</li>
   </ul>
 </div>
