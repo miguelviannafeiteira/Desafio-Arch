@@ -2,6 +2,31 @@ import { Request, Response } from 'express'
 import User from '../schema/User'
 import api from '../services/api'
 
+interface Data {
+  data : {
+    UsuarioTransacoes: [
+      {
+        _id: string,
+        usuarioId: number,
+        valor: number,
+        debito: boolean,
+        credito: boolean,
+        createdAt: string,
+      }
+    ]
+  }
+}
+
+interface UsuarioTransacao {
+      _id: string,
+      usuarioId: number,
+      valor: number,
+      debito: boolean,
+      credito: boolean,
+      createdAt: string,
+
+}
+
 class SaldoController {
   async indexUser (req:Request, res) {
     try {
@@ -15,8 +40,10 @@ class SaldoController {
   async store (req:Request, res:Response) {
     const { id } = req.params
 
-    const { data } = await api.get(`/transacoes/${id}`)
-    const transacoes = data.UsuarioTransacoes
+    const { data }:Data = await api.get(`/transacoes/${id}`)
+
+    const transacoes:UsuarioTransacao[] = data.UsuarioTransacoes
+    console.log(data)
 
     const itemsCredito = transacoes.filter((item) => {
       return item.credito

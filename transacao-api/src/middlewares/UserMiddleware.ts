@@ -16,7 +16,7 @@ class UserMiddleware {
   public async validateId (req:Request, res:resTransacao, next:NextFunction):Promise<resTransacao> {
     const { id } = req.params
     try {
-      const transacoesUsuario:resTransacao[]= await Transacao.find({usuarioId: id}, null)
+      const transacoesUsuario:resTransacao[] = await Transacao.find({ usuarioId: id }, null)
 
       res.transacao = transacoesUsuario
       if (!transacoesUsuario) {

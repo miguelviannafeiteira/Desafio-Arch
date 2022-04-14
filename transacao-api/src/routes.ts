@@ -6,7 +6,6 @@ const routes = express.Router()
 
 routes.get('/transacoes', TransacaoController.index)
 routes.get('/transacoes/:id', UserMiddleware.validateId, TransacaoController.indexUsuario)
-
 routes.post('/transacoes', TransacaoController.store)
 
 export default routes
