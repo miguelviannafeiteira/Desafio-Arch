@@ -16,7 +16,6 @@ como banco de dados.
     a id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário; com essas 
     informações faço um filtro para saber se é crédito ou débito e assim fazer o cálculo do saldo do cliente, e 
     envio para a API do saldo o id do usuário e o saldo da conta em formato JSON.
-    
     As duas API's foram armazenadas no mongodb, porque tive dificuldade em aplicar o redis para armazenar em cache.
   </p>
 </div>  
