@@ -8,11 +8,16 @@ como banco de dados.
   <div>
   <h1 align="center">Sobre o Projeto</h1>
   <p>
-    Nesse projeto foi utilizado Node.js com typescript para a criação das API's, junto com o framework
-express e o banco de dados mongodb.
-Para realizar o desafio, criei duas API's, uma que armazena as transações e outra armazena o saldo.
-Na primeira é armazenado um JSON no qual tem a id da transação, a id usuário, o valor da transação,
-se é débito ou crédito e a data que foi realizada.
+    Para realizar o desafio, criei duas API's, uma que armazena as transações e outra que armazena o saldo
+    de cada usuário.
+    Na primeira API é armazenado um JSON no qual tem a id da transação, a id usuário, o valor da transação,
+    se é débito ou crédito e a data que foi realizada; essas informações são armazenadas em dois endpoints:
+    geral, onde aparecem todas as transações que ocorreram, e individualmente, filtrando somente as que pertecem
+    a id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário; com essas 
+    informações faço um filtro para saber se é crédito ou débito e assim fazer o cálculo do saldo do cliente, e 
+    envio para a API do saldo o id do usuário e o saldo da conta em formato JSON.
+    
+    As duas API's foram armazenadas no mongodb, porque tive dificuldade em aplicar o redis para armazenar em cache.
   </p>
 </div>  
 
