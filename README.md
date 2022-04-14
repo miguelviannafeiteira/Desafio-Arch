@@ -5,10 +5,10 @@
   </p>
   <p>Na primeira API é armazenado um JSON no qual tem o id da transação, o id usuário, o valor da transação,
     se é débito ou crédito e a data em que foi realizada; utilizei dois endpoints:
-    geral, onde aparecem todas as transações que ocorreram, e individualmente, filtrando somente as que pertecem
+    geral, onde aparecem todas as transações que ocorreram, e individual, filtrando somente as que pertecem
     ao id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário e com esses 
     dados realizo um filtro para saber se é crédito ou débito e assim calcular o saldo do cliente, enviando
-    para a API, o id do usuário e o saldo da conta em formato JSON.
+    para a API o id do usuário e o saldo da conta em formato JSON.
   </p>
   <p> As duas API's foram armazenadas no banco de dados mongodb, porque tive dificuldade em aplicar o redis para armazenar
    em cache, fazendo com que a aplicação não seja tão performática.
