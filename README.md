@@ -3,10 +3,10 @@
   <p>Para realizar o desafio, criei duas API's, uma que armazena as transações e outra que armazena o saldo
     de cada usuário.
   </p>
-  <p>Na primeira API é armazenado um JSON no qual tem a id da transação, a id usuário, o valor da transação,
+  <p>Na primeira API é armazenado um JSON no qual tem o id da transação, o id usuário, o valor da transação,
     se é débito ou crédito e a data que foi realizada; utilizei dois endpoints:
     geral, onde aparecem todas as transações que ocorreram, e individualmente, filtrando somente as que pertecem
-    à id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário; com esses 
+    ao id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário e com esses 
     dados realizo um filtro para saber se é crédito ou débito e assim calcular o saldo do cliente, enviando
     para a API, o id do usuário e o saldo da conta em formato JSON.
   </p>
