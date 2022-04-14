@@ -22,7 +22,7 @@ const TransacaoSchema = new mongoose.Schema({
   },
   credito: {
     type: Boolean,
-    default: true
+    default: false
   }
 }, {
   timestamps: true
