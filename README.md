@@ -4,7 +4,7 @@
     de cada usuário.
   </p>
   <p>Na primeira API é armazenado um JSON no qual tem o id da transação, o id usuário, o valor da transação,
-    se é débito ou crédito e a data que foi realizada; utilizei dois endpoints:
+    se é débito ou crédito e a data em que foi realizada; utilizei dois endpoints:
     geral, onde aparecem todas as transações que ocorreram, e individualmente, filtrando somente as que pertecem
     ao id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário e com esses 
     dados realizo um filtro para saber se é crédito ou débito e assim calcular o saldo do cliente, enviando
