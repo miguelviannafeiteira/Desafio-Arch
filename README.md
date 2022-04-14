@@ -22,6 +22,13 @@ como banco de dados.
 </div>  
 
 <div>
+  <h1 align="center">Layout das API's</h1>
+   <img src="./layout/layout-1" width=450> 
+   <img src="./layout/layout-2" width=450> 
+   <img src="./layout/layout-3" width=450> 
+</div>
+
+<div>
   <h1 align="center">Tecnologias utilizadas</h1>
   <ul>
     <li>Node.js</li>
