@@ -7,8 +7,8 @@
     se é débito ou crédito e a data que foi realizada; utilizei dois endpoints:
     geral, onde aparecem todas as transações que ocorreram, e individualmente, filtrando somente as que pertecem
     a id do usuário. A segunda API, por meio do axios, pega as informações das transações do usuário; com essas 
-    informações faço um filtro para saber se é crédito ou débito e assim fazer o cálculo do saldo do cliente, e 
-    envio para a API, o id do usuário e o saldo da conta em formato JSON.
+    informações faço um filtro para saber se é crédito ou débito e assim fazer o cálculo do saldo do cliente, enviando
+    para a API, o id do usuário e o saldo da conta em formato JSON.
   </p>
   <p> As duas API's foram armazenadas no banco de dados mongodb, porque tive dificuldade em aplicar o redis para armazenar
    em cache, fazendo com que a aplicação não seja tão performática.
