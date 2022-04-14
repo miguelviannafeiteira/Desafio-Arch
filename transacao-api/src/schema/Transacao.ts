@@ -25,7 +25,10 @@ const TransacaoSchema = new mongoose.Schema({
     default: false
   }
 }, {
-  timestamps: true
+  timestamps: {
+    createdAt: true, 
+    updatedAt: false
+  }
 })
 
 export default mongoose.model<TransacaoInterface>('Transacao', TransacaoSchema)
